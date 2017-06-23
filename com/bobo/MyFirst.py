@@ -4,7 +4,7 @@ def func(*num):
         print(i)
 
 func(*[1,2,3,4])
-print("gg")
+print("gg")print("gg")
 print("gg")
 lis = [5,6,7,8,9]
 func(*lis)
