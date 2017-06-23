@@ -1,10 +1,8 @@
+def fact(n, k):
+    if n == 1:
+        return k
+    else:
+        return fact(n - 1, n * k)
 
-def func(*num):
-    for i in num:
-        print(i)
 
-func(*[1,2,3,4])
-print("gg")print("gg")
-print("gg")
-lis = [5,6,7,8,9]
-func(*lis)
+print(fact(5, 1))
