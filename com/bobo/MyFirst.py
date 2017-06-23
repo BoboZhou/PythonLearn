@@ -6,3 +6,4 @@ def fact(n, k):
 
 
 print(fact(5, 1))
+print(fact(5, 1))
