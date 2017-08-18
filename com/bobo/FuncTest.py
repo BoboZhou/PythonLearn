@@ -74,3 +74,26 @@ print(map1)
 
 f = lambda *x: print(x)
 f(*[1, 2, 3, 4])
+k = lazy_sum
+print(k.__name__)
+
+list1 = list(map(lambda x: x * x, [1, 2, 3, 4, 5, 6, 7, 8]))
+print(list1)
+
+
+def add(x, y):
+    return x + y
+
+
+print(reduce(lambda x, y: x + y, [1, 2, 3]))
+
+
+def sumX(*args):
+    sum = 0
+
+    for i in args:
+        sum += i
+    return sum
+
+
+print(sumX(*[1, 2, 3]))

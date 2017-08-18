@@ -1,10 +1,25 @@
-import os
+def count():
+    def f(j):
+        def g():
+            return j * j
 
-for d in os.listdir('/'):
-    print(d)
-L = ["Hello", "Bobo", "HHHH", 66]
-j = [i.lower() for i in L if isinstance(i, str)]
-print(j)
-g = (x * x for x in range(100))
-for n in g:
-    print(n)
+        return g
+
+    fs = []
+    for i in range(1, 4):
+        fs.append(f(i))
+    return fs
+
+
+f = count()
+for i in f:
+    print(i())
+
+i, j, k = [1, 2, 3]
+
+
+def bulid(x, y):
+    return lambda: x * x + y * y
+
+
+print(bulid(1, 2)())
